@@ -2,16 +2,16 @@ import re
 from utils import (stacks, bancodes)
 from patterns import (url_pattern, bancode_pattern)
 
-def validate_url(input_string):
+def validate_url(input_string) -> bool:
     """Validate URL in entire input string"""
     return bool(re.match(url_pattern, input_string))
 
-def validate_bancodes(input_string):
+def validate_bancodes(input_string) -> bool:
     """Validate Bancodes in entire input string"""
     input_pattern = r'^(' + bancode_pattern + r' ?)*$'
     return bool(re.match(input_pattern, input_string))
 
-def validate_justice(input_string):
+def validate_justice(input_string) -> bool:
     "Checks if Bancodes and provided URL are correct"
     # Split the input string into lines
     lines = input_string.strip().split("\n")
