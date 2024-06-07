@@ -6,21 +6,21 @@ prefixes = ['UX', 'SRS', 'SXS', 'SYS', 'OZ', 'T7']
 stacks = [
 
    [ # Telegram URLs without HTTPS
-      "t.me/c/267252662525/671",
-      "t.me/cha/12345",
-      "t.me/chatusername/12345",
-      "telegram.me/c/123456789012/789",
-      "telegram.dog/c/267252662525/671",
-      "telegram.dog/c/987654321098/321"
+      "t.me/c/1375161034/4",
+      "t.me/chatusername/4",
+      "telegram.me/c/1375161034/4",
+      "telegram.me/chatusername/4",
+      "telegram.dog/c/1375161034/4",
+      "telegram.dog/chatusername/4"
    ],
   
    [ # Telegram URLs with HTTP
-      "https://t.me/c/267252662525/671",
-      "https://t.me/cha/12345",
-      "https://t.me/chatusername/12345",
-      "https://telegram.me/c/123456789012/789",
-      "https://telegram.dog/c/267252662525/671",
-      "https://telegram.dog/c/987654321098/321"
+      "https://t.me/c/1375161034/4",
+      "https://t.me/chatusername/4",
+      "https://telegram.me/c/1375161034/4",
+      "https://telegram.me/chatusername/4",
+      "https://telegram.dog/c/1375161034/4",
+      "https://telegram.dog/chatusername/4"
    ],
   
    [ # Graph URLs without HTTPS
