@@ -7,7 +7,31 @@ def validate_url(input_string) -> bool:
     return bool(re.match(url_pattern, input_string))
 
 def validate_bancodes(input_string) -> bool:
-    """Validate Bancodes in entire input string"""
+    """Checks if given string checks the following conditions:
+    {(Prefix)x(Bancode Number)}
+    Telegram or Telegraph URL
+
+    Example:
+    {SXSx21} {UXx15} {OZx12}
+    t.me/c/1375161034/4
+    t.me/chatusername/4
+    telegram.me/c/1375161034/4
+    telegram.me/chatusername/4
+    telegram.dog/c/1375161034/4
+    telegram.dog/chatusername/4
+    graph.org/file/d7a4a7f2f0f6d1d
+    te.legra.ph/file/d7a4a7f2f0f6d1d
+    telegra.ph/file/d7a4a7f2f0f6d1d
+    https://t.me/c/1375161034/4
+    https://t.me/chatusername/4
+    https://telegram.me/c/1375161034/4
+    https://telegram.me/chatusername/4
+    https://telegram.dog/c/1375161034/4
+    https://telegram.dog/chatusername/4
+    https://graph.org/file/d7a4a7f2f0f6d1d
+    https://te.legra.ph/file/d7a4a7f2f0f6d1d
+    https://telegra.ph/file/d7a4a7f2f0f6d1d
+    """
     input_pattern = r'^(' + bancode_pattern + r' ?)*$'
     return bool(re.match(input_pattern, input_string))
 
