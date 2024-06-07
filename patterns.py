@@ -5,4 +5,4 @@ from utils import prefixes
 bancode_pattern = ban_code_pattern = r'{(' + '|'.join(prefixes) + r')x(0[0-9]|1[0-9]|2[0-4])}'
 
 # Define the regex pattern for a single URL
-url_pattern = r'^(https?://)?(?:(?:t\.me|telegram\.me|telegram\.dog)/(?:c/(\d{11,})|([a-zA-Z0-9_]{5,})|([a-zA-Z0-9_]+))/(\d+)|(?:te\.legra\.ph|telegra\.ph|graph\.com)/([a-zA-Z0-9-]+))$'
+url_pattern = r'^(https?://)?(?:(?:t\.me|telegram\.me|telegram\.dog)/(?:c/(\d{10,})|([a-zA-Z0-9_]{5,})|([a-zA-Z0-9_]+))/(\d+)|(?:te\.legra\.ph|telegra\.ph|graph\.org)\/file\/[^\s\/]+\.[a-zA-Z0-9-]+)$'
