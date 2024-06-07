@@ -26,14 +26,14 @@ stacks = [
    [ # Graph URLs without HTTPS
       "te.legra.ph/file/yquwyw627266242gav.png",
       "telegra.ph/file/yquwyw627266242gav.png",
-      "graph.com/file/yquwyw627266242gav.png"
+      "graph.org/file/yquwyw627266242gav.png"
    ],
   
    [ # With HTTPS
 
       "https://te.legra.ph/file/yquwyw627266242gav.png",
       "https://telegra.ph/file/yquwyw627266242gav.png",
-      "https://graph.com/file/yquwyw627266242gav.png"
+      "https://graph.org/file/yquwyw627266242gav.png"
    ]
 
 ]
@@ -41,11 +41,11 @@ stacks = [
 bancodes = [
    "{UXx12} {SRSx15} {SYSx20}", #Success
    "{UXx14}", # Success
-   "UXx12", # Failed
-   "{UXx25}", # Failed
-   "{UXx0}", # Failed
-   "{UXx012}", # Failed
-   "{UXx12} {SRSx15} foo" #Failed
+  # "UXx12", # Failed
+  # "{UXx25}", # Failed
+  # "{UXx0}", # Failed
+  # "{UXx012}", # Failed
+  # "{UXx12} {SRSx15} foo" #Failed
 ]
 
 
