@@ -24,16 +24,16 @@ stacks = [
    ],
   
    [ # Graph URLs without HTTPS
-      "te.legra.ph/file/yquwyw6272662-42-gav.png",
-      "telegra.ph/file/yquwyw6272662-42-gav.png",
-      "graph.com/file/yquwyw6272662-42-gav.png"
+      "te.legra.ph/file/yquwyw627266242gav.png",
+      "telegra.ph/file/yquwyw627266242gav.png",
+      "graph.com/file/yquwyw627266242gav.png"
    ],
   
    [ # With HTTPS
 
-      "https://te.legra.ph/file/yquwyw6272662-42-gav.png",
-      "https://telegra.ph/file/yquwyw6272662-42-gav.png",
-      "https://graph.com/file/yquwyw6272662-42-gav.png"
+      "https://te.legra.ph/file/yquwyw627266242gav.png",
+      "https://telegra.ph/file/yquwyw627266242gav.png",
+      "https://graph.com/file/yquwyw627266242gav.png"
    ]
 
 ]
