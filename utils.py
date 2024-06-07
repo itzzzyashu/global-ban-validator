@@ -24,28 +24,48 @@ stacks = [
    ],
   
    [ # Graph URLs without HTTPS
-      "te.legra.ph/yquwyw6272662-42-gav",
-      "telegra.ph/yquwyw6272662-42-gav",
-      "telegra.ph/yquwyw6272662-42-gav",
-      "graph.com/yquwyw6272662-42-gav"
+      "te.legra.ph/file/yquwyw6272662-42-gav.png",
+      "telegra.ph/file/yquwyw6272662-42-gav.png",
+      "graph.com/file/yquwyw6272662-42-gav.png"
    ],
   
    [ # With HTTPS
 
-      "https://te.legra.ph/yquwyw6272662-42-gav",
-      "https://telegra.ph/yquwyw6272662-42-gav",
-      "https://telegra.ph/yquwyw6272662-42-gav",
-      "https://graph.com/yquwyw6272662-42-gav"
+      "https://te.legra.ph/file/yquwyw6272662-42-gav.png",
+      "https://telegra.ph/file/yquwyw6272662-42-gav.png",
+      "https://graph.com/file/yquwyw6272662-42-gav.png"
    ]
 
 ]
 
 bancodes = [
-   "{UXx12} {SRSx15} {SYSx20}",
-   "{UXx14}",
-   "UXx12",
-   "{UXx25}",
-   "{UXx0}",
-   "{UXx012}",
-   "{UXx12} {SRSx15} foo"
+   "{UXx12} {SRSx15} {SYSx20}", #Success
+   "{UXx14}", # Success
+   "UXx12", # Failed
+   "{UXx25}", # Failed
+   "{UXx0}", # Failed
+   "{UXx012}", # Failed
+   "{UXx12} {SRSx15} foo" #Failed
 ]
+
+
+# For example these URLs will be validated:
+ban_string = """{SXSx21} {OZx22} {UXx15}
+t.me/c/1375161034/4
+t.me/chatusername/4
+telegram.me/c/1375161034/4
+telegram.me/chatusername/4
+telegram.dog/c/1375161034/4
+telegram.dog/chatusername/4
+graph.org/file/d7a4a7f2f0f6d1d.png
+te.legra.ph/file/d7a4a7f2f0f6d1d.png
+telegra.ph/file/d7a4a7f2f0f6d1d.png
+https://t.me/c/1375161034/4
+https://t.me/chatusername/4
+https://telegram.me/c/1375161034/4
+https://telegram.me/chatusername/4
+https://telegram.dog/c/1375161034/4
+https://telegram.dog/chatusername/4
+https://graph.org/file/d7a4a7f2f0f6d1d.png
+https://te.legra.ph/file/d7a4a7f2f0f6d1d.png
+https://telegra.ph/file/d7a4a7f2f0f6d1d.png"""
