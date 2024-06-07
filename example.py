@@ -1,5 +1,6 @@
 import re
 from patterns import (url_pattern, bancode_pattern)
+from utils import ban_string
 
 def validate_url(input_string) -> bool:
    return bool(re.match(url_pattern, input_string))
